@@ -1,0 +1,80 @@
+body{
+    background: black  ;
+}
+
+
+.login-box{
+    margin: 0 auto;
+    width: 450px;
+    height: 350px;
+    background-color: black;
+    position: relative;
+    box-shadow: -3px -5px 7px gray;
+    top: 100px;
+    left: 50px;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.login-box h1{
+    text-align: center;
+    color: limegreen;
+    
+}
+.login-box input[type = "text"],
+.login-box input[type = "password"]{
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.108);
+    box-sizing: border-box;
+    border: 0;
+    color: black;
+    padding: 10px;
+    color: red;
+   
+    margin: 0 auto;
+}
+.login-box button{
+    color: white;
+    background: rgba(7, 182, 4, 0.523);
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0;
+
+    
+}
+.login-box button:hover{
+    box-shadow: 3px 5px 0 gray;
+}
+.login-box button:hover{
+    background: green;
+}
+.error{
+    color: red;
+    animation: error 5s linear infinite;
+    text-align: center;
+    
+}
+.login-box input[type = "text"],
+.login-box input[type = "password"]:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.222);
+}
+@keyframes error{
+    0%{
+        transform: scale(0.9);
+        opacity: 0% ;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    100%{
+        transform: scale(0.9);
+        opacity: 0%;
+    }
+}
